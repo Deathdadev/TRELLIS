@@ -19,6 +19,7 @@ module.exports = {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": [
+          "uv pip install -r https://raw.githubusercontent.com/sdbds/TRELLIS-for-windows/refs/heads/main/requirements.txt",
           "uv pip sync https://raw.githubusercontent.com/sdbds/TRELLIS-for-windows/refs/heads/main/requirements-uv.txt --index-strategy unsafe-best-match",
           "uv pip install --no-build-isolation -e extensions/vox2seq/",
           "uv pip install kaolin -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu124.html",
