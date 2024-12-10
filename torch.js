@@ -21,8 +21,8 @@ module.exports = {
         "message": [
           "uv pip sync https://raw.githubusercontent.com/sdbds/TRELLIS-for-windows/refs/heads/main/requirements-uv.txt --index-strategy unsafe-best-match",
           "uv pip install --no-build-isolation -e extensions/vox2seq/",
-          "uv pip install kaolin -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu124.html"
-          "uv pip install --no-build-isolation git+https://github.com/JeffreyXiang/diffoctreerast.git"
+          "uv pip install kaolin -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.5.1_cu124.html",
+          "uv pip install --no-build-isolation git+https://github.com/JeffreyXiang/diffoctreerast.git",
           "uv pip install git+https://github.com/sdbds/diff-gaussian-rasterization"
           
           // These have been commented out for the sake of checking whether syncing from online requirements.txt will resolve issues or not
